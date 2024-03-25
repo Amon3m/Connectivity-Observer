@@ -13,7 +13,7 @@ import javax.inject.Singleton
 object Network {
     @Provides
     @Singleton
-    fun provideCreateCustomerUseCase(networkConnectivityObserver: NetworkConnectivityObserver): ObserveNetworkStatusUseCase {
+    fun provideObserveNetworkStatusUseCase(networkConnectivityObserver: NetworkConnectivityObserver): ObserveNetworkStatusUseCase {
         return ObserveNetworkStatusUseCase(networkConnectivityObserver)
     }
 

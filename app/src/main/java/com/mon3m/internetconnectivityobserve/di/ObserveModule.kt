@@ -14,6 +14,7 @@ import javax.inject.Singleton
 abstract class ObserveModule {
     @Binds
     @ViewModelScoped
-    abstract fun bindNetworkConnectivityObserver(networkConnectivityObserver: NetworkConnectivityObserver): ConnectivityObserver
+    abstract fun bindNetworkConnectivityObserver(networkConnectivityObserver: NetworkConnectivityObserver)
+    : ConnectivityObserver
 
 }
