@@ -52,6 +52,7 @@ class NetworkStatusFragment : Fragment() {
                     binding.textView.text = getString(R.string.network_lost)
                 }
             }
+            //new change
         }.launchIn(lifecycleScope)
     }
 
